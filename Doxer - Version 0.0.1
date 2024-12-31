@@ -1,0 +1,161 @@
+local Doxer = Instance.new("ScreenGui")
+local Logs = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local LogHolder = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIGradient_2 = Instance.new("UIGradient")
+local Close = Instance.new("TextButton")
+local Doxer_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UserInput = Instance.new("TextBox")
+local Dox = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIGradient_4 = Instance.new("UIGradient")
+
+--Properties:
+
+Doxer.Name = math.random(1, 99999999) -- Anti-Detect
+Doxer.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Doxer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Logs.Name = "Logs"
+Logs.Parent = Doxer
+Logs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logs.BorderSizePixel = 0
+Logs.Position = UDim2.new(0.207343414, 0, 0.194285721, 0)
+Logs.Size = UDim2.new(0, 542, 0, 427)
+Logs.Visible = false
+
+TextLabel.Parent = Logs
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 481, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "DOX LOGS"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient.Parent = TextLabel
+
+LogHolder.Name = "LogHolder"
+LogHolder.Parent = Logs
+LogHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LogHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LogHolder.BorderSizePixel = 0
+LogHolder.Position = UDim2.new(-0.00114367716, 0, 0.11583136, 0)
+LogHolder.Size = UDim2.new(0, 542, 0, 377)
+
+UIListLayout.Parent = LogHolder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_2.Parent = LogHolder
+
+Close.Name = "Close"
+Close.Parent = Logs
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.887453854, 0, 0, 0)
+Close.Size = UDim2.new(0, 60, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Doxer_2.Name = "Doxer"
+Doxer_2.Parent = Doxer
+Doxer_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Doxer_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Doxer_2.BorderSizePixel = 0
+Doxer_2.Position = UDim2.new(0, 0, 0.838571429, 0)
+Doxer_2.Size = UDim2.new(0, 312, 0, 113)
+
+TextLabel_2.Parent = Doxer_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 312, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "DOXER"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UserInput.Name = "UserInput"
+UserInput.Parent = Doxer_2
+UserInput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserInput.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserInput.BorderSizePixel = 0
+UserInput.Position = UDim2.new(0, 0, 0.442477882, 0)
+UserInput.Size = UDim2.new(0, 312, 0, 26)
+UserInput.Font = Enum.Font.SourceSans
+UserInput.PlaceholderText = "Username"
+UserInput.Text = ""
+UserInput.TextColor3 = Color3.fromRGB(0, 0, 0)
+UserInput.TextSize = 14.000
+
+Dox.Name = "Dox"
+Dox.Parent = Doxer_2
+Dox.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Dox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dox.BorderSizePixel = 0
+Dox.Position = UDim2.new(0.179487184, 0, 0.672566354, 0)
+Dox.Size = UDim2.new(0, 200, 0, 37)
+Dox.Font = Enum.Font.SourceSans
+Dox.Text = "Dox Them"
+Dox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dox.TextScaled = true
+Dox.TextSize = 14.000
+Dox.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_3.Parent = Dox
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_4.Parent = Doxer_2
+
+-- Scripts:
+
+local function VUEBWBX_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Visible == true then
+			script.Parent.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(VUEBWBX_fake_script)()
+local function PVCZSU_fake_script() -- Dox.LocalScript 
+	local script = Instance.new('LocalScript', Dox)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ls = game:GetService("LocalizationService")
+		local plr = game.Players:WaitForChild(script.Parent.Parent.UserInput.Text)
+		local Region = ls:GetCountryRegionForPlayerAsync(plr)
+	
+		local DoxText = " - "
+	
+		print(plr.Name.." Lives In "..Region)
+	
+		local NewText = Instance.new("TextLabel", script.Parent.Parent.Parent.Logs.LogHolder)
+		NewText.Text = plr.Name..DoxText..Region
+		NewText.Size = UDim2.new(0, 542,0, 50)
+		NewText.TextScaled = true
+		
+		script.Parent.Parent.Parent.Logs.Visible = true
+	end)
+end
+coroutine.wrap(PVCZSU_fake_script)()
