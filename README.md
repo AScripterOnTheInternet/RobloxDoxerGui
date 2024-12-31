@@ -1,1 +1,1 @@
-# RobloxDoxerGui
+upon executing a Doxer menu will appear on your bottom left corner of the screen, in the username textbox insert the username of the person you want to dox, then press the "Dox Them" button, the Dox Logs GUI will appear when you successfully dox someone.
