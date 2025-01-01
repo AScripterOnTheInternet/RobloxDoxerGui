@@ -1,0 +1,308 @@
+﻿local DoxerV002 = Instance.new("ScreenGui")
+local Logs = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local LogHolder = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIGradient_2 = Instance.new("UIGradient")
+local Close = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local ClearLogs = Instance.new("TextButton")
+local Doxer = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UserInput = Instance.new("TextBox")
+local Dox = Instance.new("TextButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local UIGradient_5 = Instance.new("UIGradient")
+local SettingsButton = Instance.new("ImageButton")
+local Settings = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Unload = Instance.new("TextButton")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Title = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local Close_2 = Instance.new("TextButton")
+
+--Properties:
+
+DoxerV002.Name = math.random(1, 99999999999)
+DoxerV002.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DoxerV002.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Logs.Name = "Logs"
+Logs.Parent = DoxerV002
+Logs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logs.BorderSizePixel = 0
+Logs.Position = UDim2.new(0.206261173, 0, 0.0328571424, 0)
+Logs.Size = UDim2.new(0, 542, 0, 427)
+Logs.Visible = false
+
+TextLabel.Parent = Logs
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 481, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "DOX LOGS"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient.Parent = TextLabel
+
+LogHolder.Name = "LogHolder"
+LogHolder.Parent = Logs
+LogHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LogHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LogHolder.BorderSizePixel = 0
+LogHolder.Position = UDim2.new(-0.00298869563, 0, 0.11583136, 0)
+LogHolder.Size = UDim2.new(0, 542, 0, 338)
+
+UIListLayout.Parent = LogHolder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_2.Parent = LogHolder
+
+Close.Name = "Close"
+Close.Parent = Logs
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.887453854, 0, 0, 0)
+Close.Size = UDim2.new(0, 60, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_3.Parent = Logs
+
+ClearLogs.Name = "ClearLogs"
+ClearLogs.Parent = Logs
+ClearLogs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClearLogs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClearLogs.BorderSizePixel = 0
+ClearLogs.Position = UDim2.new(0.0166051667, 0, 0.864168644, 0)
+ClearLogs.Size = UDim2.new(0, 525, 0, 50)
+ClearLogs.Font = Enum.Font.SourceSans
+ClearLogs.Text = "Clear Logs"
+ClearLogs.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClearLogs.TextScaled = true
+ClearLogs.TextSize = 14.000
+ClearLogs.TextWrapped = true
+
+Doxer.Name = "Doxer"
+Doxer.Parent = DoxerV002
+Doxer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Doxer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Doxer.BorderSizePixel = 0
+Doxer.Position = UDim2.new(0, 0, 0.838571429, 0)
+Doxer.Size = UDim2.new(0, 312, 0, 113)
+
+TextLabel_2.Parent = Doxer
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 312, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "DOXER"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UserInput.Name = "UserInput"
+UserInput.Parent = Doxer
+UserInput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserInput.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserInput.BorderSizePixel = 0
+UserInput.Position = UDim2.new(0, 0, 0.442477882, 0)
+UserInput.Size = UDim2.new(0, 312, 0, 26)
+UserInput.Font = Enum.Font.SourceSans
+UserInput.PlaceholderText = "Username"
+UserInput.Text = ""
+UserInput.TextColor3 = Color3.fromRGB(0, 0, 0)
+UserInput.TextSize = 14.000
+
+Dox.Name = "Dox"
+Dox.Parent = Doxer
+Dox.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Dox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dox.BorderSizePixel = 0
+Dox.Position = UDim2.new(0.179487184, 0, 0.672566354, 0)
+Dox.Size = UDim2.new(0, 200, 0, 37)
+Dox.Font = Enum.Font.SourceSans
+Dox.Text = "Dox Them"
+Dox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dox.TextScaled = true
+Dox.TextSize = 14.000
+Dox.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_4.Parent = Dox
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_5.Parent = Doxer
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = Doxer
+SettingsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton.BackgroundTransparency = 1.000
+SettingsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsButton.BorderSizePixel = 0
+SettingsButton.Position = UDim2.new(0.923076928, 0, 0, 0)
+SettingsButton.Size = UDim2.new(0, 24, 0, 24)
+SettingsButton.Image = "rbxassetid://13523580633"
+
+Settings.Name = "Settings"
+Settings.Parent = DoxerV002
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.266065389, 0, 0.184285715, 0)
+Settings.Size = UDim2.new(0, 415, 0, 441)
+Settings.Visible = false
+
+ScrollingFrame.Parent = Settings
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.120181404, 0)
+ScrollingFrame.Size = UDim2.new(0, 415, 0, 388)
+
+Unload.Name = "Unload"
+Unload.Parent = ScrollingFrame
+Unload.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Unload.BackgroundTransparency = 1.000
+Unload.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Unload.BorderSizePixel = 0
+Unload.Size = UDim2.new(0, 396, 0, 50)
+Unload.Font = Enum.Font.SourceSans
+Unload.Text = "Unload Gui"
+Unload.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unload.TextScaled = true
+Unload.TextSize = 14.000
+Unload.TextWrapped = true
+
+UIListLayout_2.Parent = ScrollingFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 10)
+
+Title.Name = "Title"
+Title.Parent = Settings
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 368, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Settings"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 7, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 121))}
+UIGradient_6.Parent = Settings
+
+Close_2.Name = "Close"
+Close_2.Parent = Settings
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.865767062, 0, 0, 0)
+Close_2.Size = UDim2.new(0, 54, 0, 50)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+-- Scripts:
+
+local function SBRJOMT_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Visible == true then
+			script.Parent.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(SBRJOMT_fake_script)()
+local function GKQRVF_fake_script() -- ClearLogs.LocalScript 
+	local script = Instance.new('LocalScript', ClearLogs)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i = 1, 250 do
+			script.Parent.Parent.LogHolder:FindFirstChildOfClass("TextLabel"):Destroy()
+		end
+	end)
+end
+coroutine.wrap(GKQRVF_fake_script)()
+local function JHGU_fake_script() -- Dox.LocalScript 
+	local script = Instance.new('LocalScript', Dox)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ls = game:GetService("LocalizationService")
+		local plr = game.Players:WaitForChild(script.Parent.Parent.UserInput.Text)
+		local Region = ls:GetCountryRegionForPlayerAsync(plr)
+	
+		local DoxText = " - "
+	
+		print(plr.Name.." Lives In "..Region)
+	
+	
+		local NewText = Instance.new("TextLabel", script.Parent.Parent.Parent.Logs.LogHolder)
+		NewText.Text = plr.Name..DoxText..Region
+		NewText.Size = UDim2.new(0, 542,0, 50)
+		NewText.TextScaled = true
+		
+		script.Parent.Parent.Parent.Logs.Visible = true
+	end)
+end
+coroutine.wrap(JHGU_fake_script)()
+local function BVVYMZ_fake_script() -- SettingsButton.LocalScript 
+	local script = Instance.new('LocalScript', SettingsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Settings.Visible = true
+	end)
+end
+coroutine.wrap(BVVYMZ_fake_script)()
+local function OFRI_fake_script() -- Doxer.LocalScript 
+	local script = Instance.new('LocalScript', Doxer)
+
+	script.Parent.Position = UDim2.new(0, 0,0.839, 0)
+end
+coroutine.wrap(OFRI_fake_script)()
+local function XOHDKPF_fake_script() -- Unload.LocalScript 
+	local script = Instance.new('LocalScript', Unload)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(XOHDKPF_fake_script)()
+local function AMCHS_fake_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Visible == true then
+			script.Parent.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(AMCHS_fake_script)()
